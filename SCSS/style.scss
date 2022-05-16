@@ -1,0 +1,27 @@
+$primary-color: red;
+$secondary-color: #999999;
+$font-size: 16px;
+$font: 'Source Sans Pro', sans-serif;
+
+
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+  font-size:$font-size;
+  font-family: $font;
+  color: $primary-color;
+}
+h1,
+h2 {
+  color: $secondary-color;
+}
+
+
+.gallery {
+  display: flex;
+}
+
+
+
