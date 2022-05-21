@@ -13,16 +13,21 @@
 </head> 
 <body>
 <header class+="header">
-  <h1>Paulina Photography</h1>
+  <h1>paulinesky_pics</h1>
+  <section class="menu">
+      <nav class="menu">
+        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
 
-  <nav class="menu">
-    <ul class="menu__list">
-      <li class="menu__item"><a href="/" class="menu__link">Work</a></li>
-      <li class="menu__item"><a href="/about/">About</a></li>
-      <li class="menu__item"><a href="/gallery/">Gallery</a></li>
-      <li class="menu__item"><a href="/contact/">Contact</a></li>
-    </ul>
-  </nav>
+        <label for="menu-checkbox" class="menu__toggler"></a></label>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="/" class="menu__link">Work</a></li>
+          <li class="menu__item"><a href="/about/">About</a></li>
+          <li class="menu__item"><a href="/gallery/">Gallery</a></li>
+          <li class="menu__item"><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+  </section>
+    
 </header>
 
 <main class="main">
@@ -31,14 +36,23 @@
 
 </main>
 
+
+
+
 <footer class="footer">
-<p><a href="#">Back to Top</a></p>
+  <section class="back-to-top" data-hover-hint="backToTop">
+    <a href="#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+  </section>
 
-
-  <a href="https://www.facebook.com/paulina.brizekova" class="fa fa-facebook"></a>
-  <a href="https://www.instagram.com/paulinesky_pics/" class="fa fa-instagram"></a>
-  <a href="mailto:paulina.skytova@gmail.com" class="fa fa-envelope"></a>
-
+  <section class="menu">
+    <menu class="menu__footer">
+      <a href="https://www.facebook.com/paulina.brizekova" class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com/paulinesky_pics/" class="fa fa-instagram"></a>
+      <a href="mailto:paulina.skytova@gmail.com" class="fa fa-envelope"></a>
+    </menu>
+  </section>
 </footer>
+
+<script src="fslightbox.js"></script>
 </body>
 </html>
