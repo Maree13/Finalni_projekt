@@ -3,6 +3,7 @@ $secondary-color: #999999;
 $font-size-text: 16px;
 $font: 'Source Sans Pro', sans-serif;
 $text-transform: uppercase;
+$background-color:#F2F5F8;
 
 
 
@@ -16,9 +17,31 @@ body {
   color: $primary-color;
 }
 
+//header - menu
+.menu--main {
+  color: $secondary-color;
+}
+.menu__list--main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+//.menu__item--main {
+  .button__menu--main {
+  list-style-type: none;
+  text-transform: $text-transform;
+  color: $primary-color;
+}
+
+a:link {
+  text-decoration:none;
+}
+
+//end of header - menu
+
 h1,
 h2 {
-  color: $secondary-color;
+  color: $primary-color;
   text-transform: $text-transform;
   font-size: 34px;
 }

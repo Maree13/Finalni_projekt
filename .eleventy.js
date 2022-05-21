@@ -5,6 +5,10 @@ module.exports = function(eleventyConfig) {
  // Zkopírovat css/ to _site/css/
  eleventyConfig.addPassthroughCopy("css");
 
+ // ***** Pridavam fslightbox *****
+ eleventyConfig.addPassthroughCopy("js");
+
+
 
  // ...necháme, co už v konfiguraci je, a přidáme:
   return {

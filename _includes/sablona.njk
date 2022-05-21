@@ -12,18 +12,23 @@
   <link rel="stylesheet" href="/css/style.css">
 </head> 
 <body>
-<header class+="header">
-  <h1>paulinesky_pics</h1>
-  <section class="menu">
-      <nav class="menu">
-        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+<header class="header">
 
-        <label for="menu-checkbox" class="menu__toggler"></a></label>
-        <ul class="menu__list">
-          <li class="menu__item"><a href="/" class="menu__link">Work</a></li>
-          <li class="menu__item"><a href="/about/">About</a></li>
-          <li class="menu__item"><a href="/gallery/">Gallery</a></li>
-          <li class="menu__item"><a href="/contact/">Contact</a></li>
+  <h1>paulinesky_pics</h1>
+
+  <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+
+  <label for="menu-checkbox" class="menu__toggler">Menu</label>
+
+
+  <section class="menu">
+      <nav class="menu--main">
+
+        <ul class="menu__list--main">
+          <button class="button__menu--main"><li class="menu__item--main"><a href="/">Work</a></li></button>
+          <button class="button__menu--main"><li class="menu__item--main"><a href="/about/">About</a></li></button>
+          <!-- <li class="menu__item"><a href="/gallery/">Gallery</a></li> -->
+          <button class="button__menu--main"><li class="menu__item--main"><a href="/contact/">Contact</a></li></button>
         </ul>
       </nav>
   </section>
@@ -39,20 +44,20 @@
 
 
 
-<footer class="footer">
-  <section class="back-to-top" data-hover-hint="backToTop">
-    <a href="#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
-  </section>
+  <footer class="footer">
+    <section class="back-to-top" data-hover-hint="backToTop">
+      <a href="#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+    </section>
 
-  <section class="menu">
-    <menu class="menu__footer">
-      <a href="https://www.facebook.com/paulina.brizekova" class="fa fa-facebook"></a>
-      <a href="https://www.instagram.com/paulinesky_pics/" class="fa fa-instagram"></a>
-      <a href="mailto:paulina.skytova@gmail.com" class="fa fa-envelope"></a>
-    </menu>
-  </section>
-</footer>
+    <a href="https://www.facebook.com/paulina.brizekova" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/paulinesky_pics/" class="fa fa-instagram"></a>
+    <a href="mailto:paulina.skytova@gmail.com" class="fa fa-envelope"></a>
+
+    <p class="footer__copy">&copy; Mariana Sarovic, Czechitas</p>
+
+  </footer>
 
 <script src="fslightbox.js"></script>
+<script src="/js/fslightbox.js"></script>
 </body>
 </html>
