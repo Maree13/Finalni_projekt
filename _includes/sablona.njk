@@ -14,29 +14,33 @@
 <body>
 <header class="header">
 
-  <section class="header__title">
-    <div class="title">
-      <h1>paulinesky_pics</h1>
+  <section class="section__header">
+    <div class="header">
+      <h1 class="header__title">paulinesky_pics</h1>
     </div>
 
-    <nav class="menu__hamburger">
+    <div class="header__menu">
 
-      <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+        <nav class="menu__hamburger">
 
-      <label for="menu-checkbox" class="menu__toggler"><svg class="svg__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="48" height="48" fill="white" fill-opacity="0.01"/>
-            <path d="M7.94977 11.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M7.94977 23.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M7.94977 35.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg></label>
-    
-  
-    <ul class="menu__list--main">
-      <li class="menu__item--main"><a class="menu__link--main" href="/">Work</a></li>
-      <li class="menu__item--main"><a class="menu__link--main" href="/about/">About</a></li>
-      <li class="menu__item--main"><a class="menu__link--main" href="/contact/">Contact</a></li>
-    </ul>
-</nav>
+          <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+
+          <label for="menu-checkbox" class="menu__toggler"><svg class="svg__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" fill="white" fill-opacity="0.01"/>
+                <path d="M7.94977 11.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.94977 23.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.94977 35.9498H39.9498" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></label>
+        
+      
+            <ul class="menu__list--main">
+              <li class="menu__item--main"><a class="menu__link--main" href="/">Work</a></li>
+              <li class="menu__item--main"><a class="menu__link--main" href="/about/">About</a></li>
+              <li class="menu__item--main"><a class="menu__link--main" href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
       <!-- <hr> -->
 
 
@@ -68,12 +72,15 @@
 
   <footer class="footer">
     <section class="footer__back-to-top" data-hover-hint="backToTop">
-      <a href="#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+      <a href="#" style="text-decoration:none; color:#111111"><span class="preserve-whitespace">↑ Back to Top</span></a>
     </section>
 
-    <a href="https://www.facebook.com/paulina.brizekova" class="fa fa-facebook"></a>
-    <a href="https://www.instagram.com/paulinesky_pics/" class="fa fa-instagram"></a>
-    <a href="mailto:paulina.skytova@gmail.com" class="fa fa-envelope"></a>
+    <section class="footer__social">
+      <a href="https://www.facebook.com/paulina.brizekova" class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com/paulinesky_pics/" class="fa fa-instagram"></a>
+      <a href="mailto:paulina.skytova@gmail.com" class="fa fa-envelope"></a>
+    </section>
+
 
     <p class="footer__copy">&copy; Mariana Sarovic, Czechitas</p>
 

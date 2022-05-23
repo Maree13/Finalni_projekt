@@ -20,6 +20,12 @@ body {
 
 //header - menu
 
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items:baseline;
+  flex-direction: row-reverse;
+}
   /*justify-content: space-between;
   align-items: baseline;
 }*/
@@ -69,7 +75,11 @@ body {
   border-bottom: 1px solid $background-color;
 }
 
+/* menu extra  */
 
+.menu__item--extra {
+  background-image: ;
+}
 
 /*.menu__box {
   display: inline-block;
@@ -125,7 +135,14 @@ h2,
 
 // footer
 
-.footer__back-to-top
+.footer__back-to-top {
+  font-size: $font-size-text;
+}
+
+.fa {
+  color: $primary-color;
+  text-decoration: none;
+}
 
 //gallery
 .gallery__grid {
@@ -142,7 +159,12 @@ h2,
 
 //end of gallery
 
+@media screen and (min-width: 500px) {
 
+  // menu
+
+
+}
 
 
 
