@@ -1,7 +1,7 @@
 $primary-color: #111111;
 $secondary-color: #999999;
 $font-size-text: 18px;
-$font: 'Source Sans Pro', sans-serif;
+$font: 'Source Sans Pro', 'Roboto', sans-serif;
 $text-transform: uppercase;
 $background-color: whitesmoke;
 
@@ -18,7 +18,7 @@ body {
   margin: 10%;
 }
 
-//header - menu
+/* header - menu */
 
 .section__header {
   //display: flex;
@@ -30,6 +30,8 @@ body {
 .header__title {
   padding-left: 0px;
   font-size: 28px;
+  font: 'Roboto', sans-serif;
+  text-transform: lowercase;
 }
   /*justify-content: space-between;
   align-items: baseline;
@@ -67,11 +69,12 @@ body {
 .menu__checkbox:checked ~ .menu__list--main {
   display: block;
   z-index: 2;
+  position: fixed;
 }
 
 .menu__link--main {
   display:block;
-  padding: 15px;
+  padding: 15px 150px 15px 20px;
   text-decoration: none;
   color: $primary-color;
   background-color: $background-color;
@@ -99,7 +102,6 @@ body {
   flex-direction: column;
   text-align: center;
   flex-basis: 1 1 auto;
-  width: 100%;
   padding-left: 0;
 }
 
@@ -111,6 +113,21 @@ body {
   background-repeat: no-repeat;
   margin: 20px 0;
   border-radius: 2px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 100%;
+}
+
+.menu__link--extra {
+  color: $background-color;
+  text-decoration: none;
+}
+
+a.menu__link--extra:link { text-decoration: none; }
+
+.menu__item--extra {
+  text-align: left;
+  padding-left: 20px;
 }
 
 
@@ -172,9 +189,59 @@ a.fa:hover {
 
 //end of gallery
 
-@media screen and (min-width: 500px) {
+/* section About */
 
-  // menu
+.section__about {
+  display: flex;
+  flex-direction:column;
+}
+
+.section__about--image {
+  width: 100%;
+}
+
+.section__about--text {
+  width: 100%;
+}
+
+
+//end of the section About
+
+/* TABLET VERSION */
+
+@media screen and (min-width: 800px) {
+
+/* header - menu */
+
+.svg__icon {
+  display: none;
+}
+
+.menu__list--main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+
+/* section About */
+
+.section__about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section__about--image {
+  width: 50%;
+}
+
+.section__about--text {
+  width: 50%;
+}
+
+
 
 
 }
