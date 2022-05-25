@@ -65,7 +65,8 @@ body {
 }
 
 .menu__link--main:hover {
-  background-color: #dbd8d8;
+  background-color: whitesmoke;
+  font-size: larger;
 }
 
 .menu__item--main {
@@ -152,16 +153,49 @@ a.fa:hover {
   padding: 20px;
 }
 
-.gallery__grid {
+/* gallery family */
+/* JAVA SCRIPT */
+.row {
+  /* IE 10 */
+  display: flex;
+  /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  /* IE 10 */
+  flex: 100%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/*.gallery__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 0px;
+  gap: 5px;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-evenly;
 }
 
-.gallery__item {
-  width: 100%;
+//.gallery__item {
+
+//}
+
+.gallery__item--family02 {
+  grid-row: 1 / span 2;
 }
 
+.gallery__item--family04 {
+  grid-row: 1 / span 2;
+}
+*/
 /* section About */
 .section__about {
   display: flex;
@@ -176,6 +210,14 @@ a.fa:hover {
   width: 100%;
 }
 
+/* section contact */
+.gmap_canvas {
+  width: 100%;
+  padding: 0;
+  margin-left: 0;
+  text-align: left;
+}
+
 /* TABLET VERSION */
 @media screen and (min-width: 800px) {
   /* header - menu */
@@ -187,7 +229,17 @@ a.fa:hover {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: white;
+  }
+
+  .menu__link--main {
+    background-color: white;
+    border-bottom: 1.5px solid whitesmoke;
+  }
+
+  .menu__link--main:hover {
+    border-radius: 10px;
+    border-bottom: 0;
   }
 
   /* section About */
@@ -199,9 +251,42 @@ a.fa:hover {
 
   .section__about--image {
     width: 50%;
+    margin-top: 40px;
   }
 
   .section__about--text {
     width: 50%;
+  }
+
+  .img__profile {
+    width: 100%;
+    padding: 20px 20px 20px 0;
+  }
+
+  .about__text {
+    margin: 40px;
+    padding: 20px 20px 20px 0;
+  }
+
+  /* gallery family */
+  /* JAVA SCRIPT */
+  .row {
+    /* IE 10 */
+    display: flex;
+    /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column {
+    /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
   }
 }/*# sourceMappingURL=style.css.map */
