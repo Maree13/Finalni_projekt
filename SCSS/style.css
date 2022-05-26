@@ -224,7 +224,7 @@ a.fa:hover {
   text-align: left;
 }
 
-/* TABLET VERSION */
+/* -------TABLET VERSION------------- */
 @media screen and (min-width: 600px) {
   /* header - menu */
   .svg__icon {
@@ -303,7 +303,7 @@ a.fa:hover {
     gap: 10px;
   }
 }
-/* BIG SCREEN VERSION */
+/* ---------------BIG SCREEN VERSION-------------------------- */
 @media screen and (min-width: 900px) {
   /* HEADER */
   /* gallery products */
@@ -319,6 +319,27 @@ a.fa:hover {
     padding: 5px;
     margin: 0;
     border: 2px solid whitesmoke;
+  }
+
+  /* GALLERY FAMILY */
+  /* Create four equal columns that sits next to each other */
+  .row {
+    /* IE 10 */
+    display: flex;
+    /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    /* IE 10 */
+    flex: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
   }
 
   /* FOOTER */
