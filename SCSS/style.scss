@@ -281,14 +281,24 @@ a.fa:hover {
 
 /* GALLERY PORTRAITS */
 
-.gallery__item--portrait {
-  grid-area: photo;
+//.gallery__item--portrait {
+//  background-size: cover;
+//  width: 100%;
+//  background-position: center; 
+//}
+
+.gallery__grid--portrait {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  grid-auto-flow: dense;
+  margin: 0;
   background-size: cover;
-  width: 100%;
-  background-position: center; 
 }
 
-
+.gallery__item--portrait {
+  width: 100%,
+}
 
 /* section About */
 
@@ -391,10 +401,8 @@ a.fa:hover {
 
 /* gallery family */
 
-/* JAVA SCRIPT */
-
 .row {
-  display: -ms-flexbox; /* IE 10 */
+  display:-ms-flexbox; /* IE 10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE 10 */
   flex-wrap: wrap;
@@ -419,6 +427,18 @@ a.fa:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+}
+
+/* GALLERY PORTRAITS */
+
+.gallery__grid--portrait {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  grid-auto-flow: dense;
+}
+
+.gallery__item--portrait {
+  width: 100%;
 }
 
 }
@@ -486,7 +506,6 @@ a.fa:hover {
   padding: 0 4px;
 }
 
-
 .column {
   -ms-flex: 25%; /* IE 10 */
   flex: 25%;
@@ -498,6 +517,16 @@ a.fa:hover {
   vertical-align: middle;
 }
 
+/* GALLERY PORTRAIT */
+
+.gallery__grid--portrait {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  grid-auto-flow: dense;
+  margin: 0;
+  background-size: cover;
+}
 
 /* FOOTER */
 .footer__back-to-top {

@@ -246,11 +246,17 @@ a.fa:hover {
 }
 
 /* GALLERY PORTRAITS */
-.gallery__item--portrait {
-  grid-area: photo;
+.gallery__grid--portrait {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  grid-auto-flow: dense;
+  margin: 0;
   background-size: cover;
+}
+
+.gallery__item--portrait {
   width: 100%;
-  background-position: center;
 }
 
 /* section About */
@@ -339,7 +345,6 @@ a.fa:hover {
   }
 
   /* gallery family */
-  /* JAVA SCRIPT */
   .row {
     /* IE 10 */
     display: flex;
@@ -365,6 +370,17 @@ a.fa:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+
+  /* GALLERY PORTRAITS */
+  .gallery__grid--portrait {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    grid-auto-flow: dense;
+  }
+
+  .gallery__item--portrait {
+    width: 100%;
   }
 }
 /* ---------------BIG SCREEN VERSION-------------------------- */
@@ -433,6 +449,16 @@ a.fa:hover {
   .column img {
     margin-top: 8px;
     vertical-align: middle;
+  }
+
+  /* GALLERY PORTRAIT */
+  .gallery__grid--portrait {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    grid-auto-flow: dense;
+    margin: 0;
+    background-size: cover;
   }
 
   /* FOOTER */
