@@ -18,14 +18,14 @@ body {
   margin: 10%;
 }
 
-/* header - menu */
+/* HEADER - MENU */
 
-.section__header {
+//.section__header {
   //display: flex;
   //justify-content: space-between;
   //align-items:baseline;
   //flex-direction: row-reverse;
-}
+//}
 
 .header__title {
   padding-left: 0px;
@@ -90,6 +90,9 @@ body {
   border-bottom: 1px solid $background-color;
 }
 
+.span__pics {
+  color: rgba(229, 161, 24, 0.979)
+}
 /* SIDE MENU (EXTRA)  */
 
 .menu__side--vertical a {
@@ -131,28 +134,14 @@ body {
   font-size: 28px;
 }
 
-/*.menu__side--vertical a {
-  color: white;
-  font-size: 18px;
-  display: block;
-  padding: 100px;
-  text-decoration: none;
-  background-image: url(/images/photos/momentka8.jpg);
-  background-repeat: no-repeat;
-  margin: 20px;
-}
-
-.vertical-menu a:hover {
-  background-color: black; 
-} */
 
 
-/*.menu--extra {
-  padding: 0;
-  margin-left: 0;
-}
+//.vertical-menu a:hover {
+// background-color: black; 
+//} */
 
-.menu__list--extra {
+
+/*.menu__list--extra {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -200,7 +189,7 @@ h2,
 
 //end of header - menu
 
-// footer
+/* FOOTER */
 
 .footer__back-to-top {
   font-size: small;
@@ -231,21 +220,39 @@ a.fa:hover {
   padding: 20px;
 }
 
-/* gallery family */
+/* PAGE GALLERY FAMILY */
 
-/* JAVA SCRIPT */
-
-.row {
-  //display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+.images__container--family {
+  width:100%;
+  column-count: 1;
+  column-gap: 5px;
 }
 
+.figure__image--family {
+  background-color: white;
+  padding: 5px;
+  margin: 0;
+  border: 2px solid $background-color;
+}
+
+.gallery__item--family {
+  max-width: 100%;
+}
+
+
+// JAVA SCRIPT 
+/*
+.row {
+  //display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+} */
+
 /* Create two equal columns that sits next to each other */
-.column {
-  -ms-flex: 100%; /* IE 10 */
+/* .column {
+  -ms-flex: 100%; 
   flex: 100%;
   padding: 0 4px;
 }
@@ -253,12 +260,12 @@ a.fa:hover {
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-}
+} */
 
 
 //end of gallery
 
-/* gallery products */
+/* PAGE GALLERY PRODUCTS */
 
 .gallery__grid {
   display: grid;
@@ -290,17 +297,16 @@ a.fa:hover {
 .gallery__grid--portrait {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 5px;
   grid-auto-flow: dense;
   margin: 0;
-  background-size: cover;
 }
 
 .gallery__item--portrait {
-  width: 100%,
+  width: 100%;
 }
 
-/* section About */
+
+/* PAGE ABOUT */
 
 .section__about {
   display: flex;
@@ -309,6 +315,7 @@ a.fa:hover {
 
 .section__about--image {
   width: 100%;
+  border-radius: 5px;
 }
 
 .section__about--text {
@@ -318,22 +325,56 @@ a.fa:hover {
 
 //end of the section About
 
-/* section contact */
+/* PAGE CONTACT */
 
-.gmap_canvas {
-  width: 100%;
-  padding: 0;
-  margin-left:0;
-  text-align:left;
+.contact__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
 }
+
+.contact__data--address,
+.contact__data--phone {
+  background-color: $background-color;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contact__data--address {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.contact__data--phone {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:40%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 
 //end of the section Contact
 
-/* -------TABLET VERSION------------- */
+/* ------------TABLET VERSION--------------- */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 
-/* header - menu */
+/* HEADER - MAIN MENU */
 
 .svg__icon {
   display: none;
@@ -344,11 +385,14 @@ a.fa:hover {
   justify-content: space-between;
   padding: 0;
   background-color: white;
+  margin-bottom: 40px;
 }
 
 .menu__link--main {
   background-color: white;
-  border-bottom: 1.5px solid $background-color;
+  //border-bottom: 1.5px solid $background-color;
+  border-bottom: none;
+  padding: 15px 100px 15px 20px;
 }
 
 .menu__link--main:hover {
@@ -372,7 +416,7 @@ a.fa:hover {
 
 
 
-/* section About */
+/* PAGE ABOUT */
 
 .section__about {
   display: flex;
@@ -399,29 +443,37 @@ a.fa:hover {
   padding: 20px 20px 20px 0;
 }
 
-/* gallery family */
+/* PAGE GALLERY FAMILY */
 
-.row {
-  display:-ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+.images__container--family {
+  column-count: 2;
 }
 
+.figure__image--family {
+  margin-bottom: 10px;
+}
+
+/*.row {
+  display:-ms-flexbox; /* IE 10 */
+  /*display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  /*flex-wrap: wrap;
+  padding: 0 4px;
+} */
+
 /* Create two equal columns that sits next to each other */
-.column {
+/*.column {
   -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
+  /*flex: 50%;
   padding: 0 4px;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-}
+}  */
 
-/* gallery products */
+/* PAGE GALLERY PRODUCTS */
 
 .gallery__grid {
   display: grid;
@@ -429,7 +481,7 @@ a.fa:hover {
   gap: 10px;
 }
 
-/* GALLERY PORTRAITS */
+/* PAGE GALLERY PORTRAITS */
 
 .gallery__grid--portrait {
   grid-template-columns: repeat(2, 1fr);
@@ -443,9 +495,19 @@ a.fa:hover {
 
 }
 
+/* FOOTER */
+
+.footer__back-to-top {
+  margin-top: 10px;
+}
+
+.images__container--family {
+  margin-bottom: 20px;
+}
+
 /* ---------------BIG SCREEN VERSION-------------------------- */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
 
   /* HEADER */
   .header__title {
@@ -479,7 +541,7 @@ a.fa:hover {
     font-size: 36px;
   }
 
-  /* gallery products */
+  /* PAGE GALLERY PRODUCTS */
 
 .gallery__grid {
   display: grid;
@@ -495,29 +557,33 @@ a.fa:hover {
   border: 2px solid $background-color;
 }
 
-/* GALLERY FAMILY */
+/* PAGE GALLERY FAMILY */
 
 /* Create four equal columns that sits next to each other */
-.row {
-  display: -ms-flexbox; /* IE 10 */
+/* .row {
+  display: -ms-flexbox; 
   display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
+  -ms-flex-wrap: wrap;  
   flex-wrap: wrap;
   padding: 0 4px;
-}
+}*/
 
-.column {
-  -ms-flex: 25%; /* IE 10 */
+/*.column {
+  -ms-flex: 25%; 
   flex: 25%;
   padding: 0 4px;
-}
+}*/
 
-.column img {
+/*.column img {
   margin-top: 8px;
   vertical-align: middle;
+} */
+
+.images__container--family {
+  column-count: 3;
 }
 
-/* GALLERY PORTRAIT */
+/* PAGE GALLERY PORTRAIT */
 
 .gallery__grid--portrait {
   display: grid;
@@ -525,8 +591,11 @@ a.fa:hover {
   gap: 5px;
   grid-auto-flow: dense;
   margin: 0;
-  background-size: cover;
 }
+
+/* PAGE CONTACT */
+
+
 
 /* FOOTER */
 .footer__back-to-top {
